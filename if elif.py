@@ -1,0 +1,145 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "7f2b0706",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "expected an indented block after function definition on line 5 (992060833.py, line 6)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Input \u001b[1;32mIn [2]\u001b[1;36m\u001b[0m\n\u001b[1;33m    if richter >= 8.0 :\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mIndentationError\u001b[0m\u001b[1;31m:\u001b[0m expected an indented block after function definition on line 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "#50 Richter scale \n",
+    "richter = float(input(\"Enter a magnitude on the Richter scale: \"))\n",
+    "description = getDescription(richter)\n",
+    "print(description)\n",
+    "def getDescription(richter) :\n",
+    "if richter >= 8.0 :\n",
+    "    result = \"Most structures fall\"\n",
+    "elif richter >= 7.0 :\n",
+    "    result = \"Many buildings destroyed\"\n",
+    "elif richter >= 6.0 :\n",
+    "    result = \"Many buildings considerably damaged, some collapse\"\n",
+    "elif richter >= 4.5 :\n",
+    "    result = \"Damage to poorly constructed buildings\"\n",
+    "else : \n",
+    "    result = \"No destruction of buildings\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "2a68897b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Input birthday: 4\n",
+      "Input month of birth (e.g. march, july etc): january\n",
+      "Your Astrological sign is : Capricorn\n"
+     ]
+    }
+   ],
+   "source": [
+    "#48 birthdate astrological sign\n",
+    "day = int(input(\"Input birthday: \"))\n",
+    "month = input(\"Input month of birth (e.g. march, july etc): \")\n",
+    "if month == 'december':\n",
+    "\tastro_sign = 'Sagittarius' if (day < 22) else 'capricorn'\n",
+    "elif month == 'january':\n",
+    "\tastro_sign = 'Capricorn' if (day < 20) else 'aquarius'\n",
+    "elif month == 'february':\n",
+    "\tastro_sign = 'Aquarius' if (day < 19) else 'pisces'\n",
+    "elif month == 'march':\n",
+    "\tastro_sign = 'Pisces' if (day < 21) else 'aries'\n",
+    "elif month == 'april':\n",
+    "\tastro_sign = 'Aries' if (day < 20) else 'taurus'\n",
+    "elif month == 'may':\n",
+    "\tastro_sign = 'Taurus' if (day < 21) else 'gemini'\n",
+    "elif month == 'june':\n",
+    "\tastro_sign = 'Gemini' if (day < 21) else 'cancer'\n",
+    "elif month == 'july':\n",
+    "\tastro_sign = 'Cancer' if (day < 23) else 'leo'\n",
+    "elif month == 'august':\n",
+    "\tastro_sign = 'Leo' if (day < 23) else 'virgo'\n",
+    "elif month == 'september':\n",
+    "\tastro_sign = 'Virgo' if (day < 23) else 'libra'\n",
+    "elif month == 'october':\n",
+    "\tastro_sign = 'Libra' if (day < 23) else 'scorpio'\n",
+    "elif month == 'november':\n",
+    "\tastro_sign = 'scorpio' if (day < 22) else 'sagittarius'\n",
+    "print(\"Your Astrological sign is :\",astro_sign)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "0d5e9cc6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter x*x coefficient:22\n",
+      "enter x coefficient:5\n",
+      "enter the constant term:77\n",
+      "the roots of complex\n"
+     ]
+    }
+   ],
+   "source": [
+    "#51:Roots of Quadratic Equation\n",
+    "a=int(input(\"enter x*x coefficient:\"))\n",
+    "b=int(input(\"enter x coefficient:\"))\n",
+    "c=int(input(\"enter the constant term:\"))\n",
+    "d=(b*b)-(4*a*c) #this is descriminant\n",
+    "if d>0:\n",
+    "    root_1=(b+(d**0.5))/(2*a)\n",
+    "    root_2=(b-(d**0.5))/(2*a)\n",
+    "    print(\"the roots of equation:\",root_1,root_2)\n",
+    "else:\n",
+    "    print(\"the roots of complex\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "879c0f0e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
